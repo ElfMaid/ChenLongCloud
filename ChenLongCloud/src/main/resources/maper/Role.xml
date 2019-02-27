@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="role">
+
+
+
+
+    <select id="selectAllRole" resultType="com.chenlong.entity.Role">
+     select * from role;
+    </select> 
+    
+    <select id="selectRoleByID" resultType="com.chenlong.entity.Role" parameterType="hashmap">
+     select * from role where role_ID = #{role_ID1} or role_ID = #{role_ID2} ;
+    </select> 
+    
+    
+</mapper>
